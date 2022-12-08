@@ -20,6 +20,9 @@
       background-color: var(--main-color);
     }
   }
+  .profileDesc:first-of-type {
+    margin-top: 15px;
+  }
   .profileDesc {
     color: var(--inverse-color-5);
     font-weight: 400;
