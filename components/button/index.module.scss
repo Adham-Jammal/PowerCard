@@ -1,0 +1,49 @@
+.powerBtn {
+  font-size: var(--font-small) !important;
+  font-weight: var(--weight-500) !important;
+  height: 36px !important;
+  padding: 5px 28px !important;
+  border-radius: 8px !important;
+  @media (max-width: 1199.99px) and (min-width: 992px) {
+    border-radius: 2.5px !important;
+  }
+  @media (max-width: 767.99px) {
+    font-size: var(--font-large) !important;
+  }
+
+  &.withShadow {
+    box-shadow: var(--shadow-1) !important;
+  }
+}
+.primary {
+  color: var(--white-color);
+  &:hover {
+    background-color: transparent;
+    color: var(--main-color);
+  }
+}
+.default {
+  color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+  background-color: transparent !important;
+  &:hover {
+    background-color: var(--main-color) !important;
+    color: var(--white-color) !important;
+    border-color: var(--main-color) !important;
+  }
+}
+
+.reverse {
+  color: var(--inverse-color);
+  border-color: var(--inverse-color);
+  &:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-color: var(--inverse-color);
+  }
+}
+
+.white {
+  background-color: var(--inverse-color);
+  color: var(--main-color);
+}

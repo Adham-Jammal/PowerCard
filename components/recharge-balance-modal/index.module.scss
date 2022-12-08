@@ -1,0 +1,148 @@
+.progressWrap {
+  margin-top: 16px;
+
+  .progressBar {
+    margin-bottom: 10px;
+  }
+}
+
+.valid.valid {
+  opacity: 1;
+  // :global {
+  path {
+    fill: var(--green-color);
+  }
+  // }
+}
+
+.starsWrap {
+  svg {
+    @media (max-width: 767.99px) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .star {
+    cursor: pointer;
+    &:not(:last-of-type) {
+      margin-inline-end: 2px;
+    }
+    &.active {
+      opacity: 0.2;
+    }
+  }
+}
+.signModal {
+  .modalTitle {
+    text-align: center;
+    font-size: var(--font-xxx-large);
+    color: var(--inverse-color);
+
+    margin-top: 30px;
+    font-weight: 600;
+    @media (max-width: 575.99px) {
+      margin-top: 10px;
+    }
+  }
+}
+.modalContent {
+  padding: 0 30px;
+  @media (max-width: 575.99px) {
+    padding: 0 0px;
+  }
+}
+.rememberForgetWrap {
+  display: flex;
+  span {
+    font-size: 13px !important;
+    color: var(--inverse-color);
+  }
+  align-items: center;
+  justify-content: space-between;
+}
+.forgetBtn {
+  font-size: 13px !important;
+  color: var(--inverse-color);
+
+  &:hover {
+    color: var(--main-color);
+  }
+}
+.submitBtnWrap {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  @media (max-width: 575.99px) {
+    margin-top: 30px;
+  }
+  .submitBtn {
+    min-width: 305px;
+    padding: 14px 75px;
+    border-radius: 8px !important;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    height: 48px !important;
+    font-weight: 500;
+    color: var(--white-color);
+    text-align: center;
+    outline: none !important;
+    @media (max-width: 575.99px) {
+      width: 200px;
+      min-width: 200px;
+
+      padding: 11px 30px;
+    }
+    &:hover {
+      background-color: var(--main-color-light);
+      border-color: var(--main-color);
+    }
+  }
+}
+.cancelWrap {
+  margin-bottom: 40px;
+  text-align: center;
+  height: 48px !important;
+
+  @media (max-width: 767.99px) {
+    margin-bottom: 50px;
+  }
+  @media (max-width: 575.99px) {
+    margin-bottom: 30px;
+  }
+  .cancelBtn {
+    background-color: var(--grey-light-color);
+    color: var(--dark-color);
+    padding: 11px 75px;
+    width: 305px;
+    border-radius: 8px;
+    font-size: var(--font-medium);
+    font-weight: var(--weight-500);
+    @media (max-width: 575.99px) {
+      width: 200px;
+      padding: 10px 30px;
+    }
+    @media (max-width: 767.99px) {
+      font-size: var(--font-large);
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.signInLink {
+  margin: 16px 0;
+  font-size: 13px;
+  color: var(--inverse-color);
+
+  span {
+    color: var(--main-color);
+    text-decoration: underline;
+    font-weight: 500;
+
+    cursor: pointer;
+    &:hover {
+      color: var(--main-color-light);
+    }
+  }
+}

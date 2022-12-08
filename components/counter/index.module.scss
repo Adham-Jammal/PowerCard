@@ -1,0 +1,38 @@
+.counter {
+  display: flex;
+  align-items: center;
+  .input {
+    height: 40px;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 20px;
+    padding: 0 15px !important;
+    font-weight: 700 !important;
+    line-height: 170%;
+    color: var(--inverse-color) !important;
+    border: none !important;
+    width: 60px !important;
+
+    background-color: transparent !important;
+  }
+}
+.incDecBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  &:hover {
+    filter: brightness(0.9);
+  }
+  // :global {
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+  // }
+}

@@ -1,0 +1,71 @@
+.faqs {
+  position: relative;
+}
+.faqsImgCol {
+  padding-inline-start: 30px;
+  margin-bottom: 20px;
+  .faqsInnerImg {
+    height: 300px;
+    position: relative;
+    z-index: 99;
+    border-radius: var(--radius-8);
+    @media (max-width: 767.99px) {
+      height: 250px;
+    }
+    @media (max-width: 575.99px) {
+      height: 180px;
+    }
+  }
+}
+
+.faqsTitle {
+  margin-bottom: 30px;
+  color: var(--inverse-color);
+
+  span {
+    display: inline-block;
+    position: relative;
+    color: var(--inverse-color);
+  }
+  .span {
+    color: var(--main-color);
+  }
+}
+
+.faqsContent {
+  position: relative;
+  p {
+    font-size: var(--font-large);
+  }
+  @media (max-width: 768px) {
+    min-height: 30vh;
+  }
+  .questionMark {
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
+    filter: brightness(0.5);
+    transform: translate(-30%, 70%);
+    @media (max-width: 768px) {
+      bottom: 70%;
+      transform: translate(-30%, 70%) scale(0.7);
+    }
+  }
+  ul {
+    list-style: initial;
+    padding-inline-start: 20px;
+    margin-top: 10px;
+    li {
+      color: var(--grey-light-color);
+      font-size: var(--font-large);
+    }
+  }
+}
+
+.mainCollapse {
+  background-color: transparent;
+}
+.faqTitle {
+  color: var(--main-color);
+  font-size: var(--font-large);
+}

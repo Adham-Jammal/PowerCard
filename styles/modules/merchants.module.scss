@@ -1,0 +1,72 @@
+.merchants {
+  position: relative;
+  background: url("/images/bg.png");
+  animation: animate-background 10s alternate infinite;
+}
+@keyframes animate-background {
+  from {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+  to {
+    background-position-x: -50%;
+    background-position-y: 20%;
+  }
+}
+.merchantsImgCol {
+  margin-bottom: 20px;
+  &:not(.ar) {
+    padding-inline-start: 30px;
+  }
+  .merchantsInnerImg {
+    height: 300px;
+    position: relative;
+    z-index: 99;
+    border-radius: var(--radius-8);
+    @media (max-width: 767.99px) {
+      height: 250px;
+    }
+    @media (max-width: 575.99px) {
+      height: 180px;
+    }
+  }
+}
+
+.merchantsTitle {
+  margin-bottom: 30px;
+  color: var(--inverse-color);
+
+  span {
+    display: inline-block;
+    position: relative;
+    &:after {
+      content: "";
+      width: 100%;
+      border-top: 5px solid var(--main-color);
+      position: absolute;
+      bottom: -10px;
+      inset-inline-start: 0;
+      border-radius: 2px;
+    }
+  }
+}
+
+.merchantContent {
+  p {
+    font-size: var(--font-large);
+    color: var(--inverse-color);
+  }
+  ul {
+    list-style: initial;
+    padding-inline-start: 20px;
+    margin-top: 10px;
+    li {
+      color: var(--grey-light-color);
+      font-size: var(--font-large);
+    }
+  }
+}
+
+.orange {
+  color: var(--main-color);
+}

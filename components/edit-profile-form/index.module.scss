@@ -1,0 +1,90 @@
+.joinInnerForm {
+  position: relative;
+  padding: 0px 0px 40px;
+  .customHeading {
+    margin-bottom: 30px;
+    color: var(--inverse-color);
+    span {
+      display: inline-block;
+      position: relative;
+      &:after {
+        content: "";
+        width: 100%;
+        border-top: 5px solid var(--main-color);
+        position: absolute;
+        bottom: -10px;
+        inset-inline-start: 0;
+        border-radius: 2px;
+      }
+    }
+  }
+  input {
+    padding: 14px;
+    border-width: 2px;
+    border-radius: var(--radius-8);
+    @media (max-width: 575.99px) {
+      padding: 8px 10px;
+    }
+  }
+}
+.mobileNumber {
+  position: relative;
+  input {
+    padding-inline-start: 90px !important;
+  }
+  .countryNumber {
+    position: absolute;
+    top: 35px;
+    border-inline-end: 0.6px solid #939598;
+    padding: 0 10px;
+    // :global {
+    .flag-icon {
+      margin-inline-end: 5px;
+    }
+    // }
+  }
+}
+
+.dragger {
+  border: 1px dashed var(--main-color) !important;
+  border-radius: var(--radius-8) !important;
+  background: transparent !important;
+  align-items: center !important;
+  display: flex !important;
+  height: 45px !important;
+  .upload {
+    color: var(--main-color);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.smallNote {
+  margin-top: 8px;
+  font-size: var(--font-mid-x-small);
+  display: block;
+}
+.submitButtonWrap {
+  text-align: center;
+  margin-top: 40px;
+  button {
+    height: 45px !important;
+    padding: 20px 120px;
+    min-width: 250px;
+    border-radius: 8px !important;
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+
+    @media (max-width: 575.99px) {
+      padding: 12px 80px;
+    }
+    &:hover {
+      border-color: var(--main-color-light) !important;
+      background-color: var(--main-color-light) !important;
+    }
+  }
+}
+body[dir^="rtl"] {
+  .HeadBox {
+    transform: translate(50%, -50%);
+  }
+}

@@ -1,0 +1,100 @@
+.ContactInnerForm {
+  position: relative;
+  border: 1px solid var(--lines-color);
+  padding: 100px 60px 40px;
+  border-radius: var(--radius-8);
+  @media (max-width: 767.99px) {
+    padding: 80px 30px 30px;
+  }
+  @media (max-width: 575.99px) {
+    padding: 40px 15px 10px;
+  }
+  .HeadBox {
+    position: absolute;
+    top: 0;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 767.99px) {
+      width: 95%;
+    }
+    h2 {
+      @media (max-width: 575.99px) {
+        font-size: 18px;
+      }
+    }
+  }
+  input,
+  textarea {
+    padding: 14px;
+    border-width: 2px;
+    border-radius: var(--radius-8);
+    @media (max-width: 575.99px) {
+      padding: 8px 10px;
+    }
+  }
+}
+.mobileNumber {
+  position: relative;
+  input {
+    padding-inline-start: 90px !important;
+  }
+  .countryNumber {
+    position: absolute;
+    top: 35px;
+    background: transparent;
+    border-inline-end: 0.6px solid #939598;
+    padding: 0 10px;
+    // :global {
+    .flag-icon {
+      margin-inline-end: 5px;
+    }
+    // }
+  }
+}
+
+.dragger {
+  background: transparent !important;
+  .upload {
+    color: var(--main-color);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  // :global {
+  .ant-upload-drag-container {
+    padding: 15px;
+    border: 2px dashed var(--main-color);
+    border-radius: var(--radius-8);
+  }
+  // }
+}
+.smallNote {
+  margin-top: 8px;
+  font-size: var(--font-mid-x-small);
+  display: block;
+}
+.submitButtonWrap {
+  text-align: center;
+  margin-top: 40px;
+  button {
+    height: 45px !important;
+    padding: 20px 120px;
+    min-width: 250px;
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+    border-radius: 8px !important;
+
+    @media (max-width: 575.99px) {
+      padding: 12px 80px;
+    }
+    &:hover {
+      border-color: var(--main-color-light) !important;
+      background-color: var(--main-color-light) !important;
+    }
+  }
+}
+body[dir^="rtl"] {
+  .HeadBox {
+    transform: translate(50%, -50%);
+  }
+}

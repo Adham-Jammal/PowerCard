@@ -1,0 +1,22 @@
+.reviewSlide {
+  padding: 0 12px;
+  height: 100%;
+}
+.reviewsWrap {
+  .sectionTitle {
+    margin-bottom: 0;
+    color: var(--main-color);
+    b {
+      font-weight: 700;
+      color: var(--inverse-color);
+    }
+    @media (max-width: 575.99px) {
+      text-align: start !important;
+    }
+  }
+}
+.reviewSlider {
+  position: unset;
+  overflow: hidden;
+  padding: 30px 0;
+}

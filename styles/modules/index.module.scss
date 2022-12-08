@@ -1,0 +1,50 @@
+.main {
+  min-height: 100vh;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.buyAndWinCards.buyAndWinCards {
+  margin-bottom: 10px;
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+.appleCards {
+  position: relative;
+}
+.backWordStart {
+  inset-inline-start: 0;
+  transform: translateX(-70%);
+  font-size: 70px;
+  &.ar {
+    transform: translateX(55%);
+    font-size: 60px;
+  }
+  @media (max-width: 1140px) {
+    display: none;
+  }
+}
+.backWordEnd {
+  inset-inline-end: 0;
+  font-size: 70px;
+  @media (max-width: 1140px) {
+    display: none;
+  }
+  transform: translateX(60%) translateY(40%);
+  &.ar {
+    transform: translateX(-60%);
+  }
+}
+.reviews {
+  margin: 100px 0;
+}
+
+.mobileBtn {
+  display: none;
+  @media (max-width: 600px) {
+    margin-top: -60px;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}

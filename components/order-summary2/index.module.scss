@@ -1,0 +1,172 @@
+.orderSummaryCard {
+  border-radius: var(--radius-8);
+  background: radial-gradient(
+    129.36% 412.93% at -18.59% -31.72%,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  .couponForm {
+    input {
+      padding: 10px !important;
+      border-width: 2px !important;
+      border-radius: var(--radius-8) 0 0 var(--radius-8) !important;
+    }
+    button {
+      border-radius: 0 var(--radius-8) var(--radius-8) 0 !important;
+      height: 42px !important;
+      background-color: var(--main-color);
+      border-color: var(--main-color);
+      width: 117px;
+      &:hover {
+        background-color: var(--main-color-light);
+        border-color: var(--main-color-light);
+      }
+    }
+    &.rtl {
+      input {
+        border-radius: 0 var(--radius-8) var(--radius-8) 0 !important;
+      }
+      button {
+        border-radius: var(--radius-8) 0 0 var(--radius-8) !important;
+      }
+    }
+  }
+}
+.orderSummary {
+  h5 {
+    margin-top: 25px;
+    color: var(--main-color);
+  }
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--inverse-color);
+      padding: 8px 0;
+      .label {
+        font-size: 13px;
+      }
+      &:nth-child(2) {
+        border-bottom: 1px solid var(--inverse-color);
+      }
+      .price {
+        font-weight: 500;
+      }
+      .priceWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .currency {
+          text-transform: uppercase;
+          margin-inline-start: 5px;
+          color: var(--inverse-color);
+          font-weight: var(--weight-500);
+          font-size: var(--font-x-small);
+          padding-top: 8px;
+        }
+        .price {
+          background: linear-gradient(
+            72.4deg,
+            #dd830b 11.36%,
+            #eab875 24.84%,
+            #ebbc7c 30.13%,
+            #e09024 36.81%,
+            #f3ddbf 102.54%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: var(--font-x-large);
+          font-weight: var(--weight-700);
+        }
+        .priceCurrencyWrap {
+          display: inline-flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.checkoutBtnWrap {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  .repeat {
+    height: 35px !important;
+    width: 150px;
+    padding: 0 7px !important;
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+    &:hover {
+      background-color: var(--main-color-light) !important;
+      border-color: var(--main-color-light) !important;
+    }
+  }
+  .rate {
+    height: 35px !important;
+    padding: 0 7px !important;
+  }
+}
+
+.orderItem {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--inverse-color);
+  &:not(:first-child) {
+    padding-top: 15px;
+  }
+  img {
+    border-radius: 8px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  .title {
+    color: var(--inverse-color);
+    font-size: var(--font-medium);
+    font-weight: 600;
+    display: block;
+  }
+  .category {
+    display: block;
+    color: var(--inverse-color-5);
+  }
+  .foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .company {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--inverse-color);
+      font-weight: 400;
+    }
+    .price {
+      color: var(--inverse-color);
+      font-weight: 600;
+      display: inline-flex;
+      span {
+        color: var(--main-color);
+      }
+    }
+  }
+}
+.desc {
+  width: calc(100% - 115px);
+}
+.export {
+  cursor: pointer;
+  color: var(--main-color);
+  font-weight: 600;
+  transition: 0.2 all ease-in;
+  &:hover {
+    color: var(--main-color-light);
+  }
+}

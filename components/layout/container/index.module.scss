@@ -1,0 +1,32 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  @media (max-width: 424.99px) {
+    max-width: initial;
+  }
+  @media (max-width: 575.99px) and (min-width: 425px) {
+    max-width: initial;
+  }
+  @media (max-width: 767.99px) and (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (max-width: 991.99px) and (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (max-width: 1199.99px) and (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (max-width: 1399.99px) and (min-width: 1200px) {
+    max-width: 1140px;
+  }
+  @media (min-width: 1400px) {
+    max-width: 1320px;
+  }
+}
+
+.containerFluid {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}

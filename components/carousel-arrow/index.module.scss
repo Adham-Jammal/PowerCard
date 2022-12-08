@@ -1,0 +1,19 @@
+.sliderArrow {
+  width: 15px;
+  height: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  &:before {
+    display: none;
+  }
+  path {
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    path {
+      fill: var(--inverse-color) !important;
+    }
+  }
+}

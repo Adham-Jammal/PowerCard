@@ -1,0 +1,71 @@
+.subscribeWrapper {
+  .container {
+    @media (max-width: 575.99px) {
+      padding: 0 0;
+    }
+  }
+  .subscribeInner {
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 40px 40px 50px 40px;
+    @media (max-width: 767.99px) {
+      padding: 20px 20px 30px 20px;
+    }
+    @media (max-width: 575.99px) {
+      border-radius: 0px;
+    }
+    h2 {
+      font-size: var(--font-big);
+      font-weight: var(--weight-700);
+      color: var(--white-color);
+    }
+    p {
+      max-width: 57%;
+      font-size: var(--font-large);
+      margin: 0 auto;
+      color: var(--white-color);
+      @media (max-width: 1350px) {
+        max-width: 60%;
+      }
+      @media (max-width: 767.99px) {
+        max-width: 80%;
+      }
+    }
+    .subscribeForm {
+      overflow: hidden;
+      margin-top: 40px;
+      @media (max-width: 575.99px) {
+        margin-top: 30px;
+      }
+      text-align: start;
+
+      .submit {
+        color: var(--main-color);
+        background-color: var(--white-color);
+        height: 40px;
+        width: 170px !important;
+        border: 0;
+        margin-block-start: -1px;
+        margin-inline-end: -2px;
+        position: absolute;
+        border-inline-start: 0;
+        text-transform: capitalize;
+        top: 0;
+        margin: -40px 0;
+        font-weight: 600;
+        border-radius: 8px;
+        inset-inline-end: 0;
+        font-size: var(--font-medium);
+        @media (max-width: 575.99px) {
+          height: 36px;
+          padding: 0 20px;
+        }
+        &:hover {
+          opacity: 0.8;
+          color: var(--black-color);
+        }
+      }
+    }
+  }
+}

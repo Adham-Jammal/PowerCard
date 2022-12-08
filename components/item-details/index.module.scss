@@ -1,0 +1,186 @@
+.itemDetailsHeader {
+  margin-top: 80px;
+  position: relative;
+  @media (max-width: 991.99px) {
+    margin-top: 40px;
+  }
+  .row {
+    @media (max-width: 991.99px) {
+      justify-content: center;
+    }
+  }
+}
+.cardName {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  .avatar {
+    width: 80px;
+    height: 80px;
+    @media (max-width: 767.99px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+.contentHead,
+.cardCounterWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardCounterWrap {
+  flex-wrap: wrap;
+  width: calc(100% - 40px);
+}
+
+.imageCol {
+  .imageWrap {
+    padding-inline-start: 50px;
+  }
+  .imageInnerWrap {
+    border-radius: var(--radius-8);
+    max-height: 400px;
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+    @media (max-width: 991px) {
+      min-height: 300px;
+      max-height: 400px;
+    }
+    @media (max-width: 600px) {
+      min-height: 180px;
+      max-height: 400px;
+    }
+    // :global {
+    img {
+      width: 100%;
+      object-fit: fill;
+      height: 100%;
+    }
+    // }
+  }
+  .linesOuterWrap {
+    position: relative;
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border: 1px solid #77500a;
+      position: absolute;
+      top: -24px;
+      inset-inline-start: -24px;
+      z-index: -1;
+      border-radius: 8px;
+    }
+  }
+  .linesWrap {
+    position: relative;
+    &:after,
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border: 1px solid #77500a;
+      position: absolute;
+      border-radius: 8px;
+      z-index: -1;
+    }
+    &:after {
+      top: -8px;
+      inset-inline-start: -8px;
+    }
+    &:before {
+      top: -16px;
+      inset-inline-start: -16px;
+    }
+  }
+}
+
+.contentWrap {
+  @media (max-width: 991.99px) {
+    margin-top: 40px;
+  }
+  .contentHead {
+    margin-bottom: 20px;
+
+    .nameWrap {
+      h4 {
+        margin-bottom: 5px;
+        color: var(--inverse-color) !important;
+      }
+      span {
+        color: var(--main-color);
+        font-size: var(--font-medium);
+      }
+      // }
+    }
+  }
+  .cardCounterWrap {
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0px;
+  }
+  .contentBody {
+    min-height: 300px !important;
+    height: auto !important;
+
+    @media (max-width: 991px) {
+      min-height: 200px !important;
+      height: auto !important;
+    }
+    h3 {
+      color: var(--inverse-color);
+    }
+    p {
+      line-height: 166%;
+      color: var(--inverse-color-5);
+      font-size: var(--font-large);
+    }
+  }
+}
+
+.addToCartBtn {
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+  min-width: 200px;
+  color: var(--black-color) !important;
+  height: 42px !important;
+  &:hover {
+    background-color: var(--main-color-light) !important;
+    border-color: var(--main-color-light) !important;
+  }
+}
+
+.cardPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .currency {
+    text-transform: uppercase;
+    margin-inline-start: 5px;
+    color: var(--inverse-color);
+    font-weight: var(--weight-500);
+    font-size: var(--font-medium);
+    padding-top: 8px;
+  }
+  .price {
+    background: linear-gradient(
+      72.4deg,
+      #dd830b 11.36%,
+      #eab875 24.84%,
+      #ebbc7c 30.13%,
+      #e09024 36.81%,
+      #f3ddbf 102.54%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--font-xx-large);
+    font-weight: var(--weight-700);
+  }
+  .priceCurrencyWrap {
+    display: inline-flex;
+    align-items: center;
+  }
+}

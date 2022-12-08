@@ -1,0 +1,183 @@
+.footer {
+  padding: 50px 0 100px;
+  @media (max-width: 767.99px) {
+    padding: 30px 0;
+  }
+  .container {
+    @media (max-width: 767.99px) and (min-width: 576px) {
+      padding: 0 0;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .footerLogoSec {
+    text-align: center;
+    @media (max-width: 991.99px) {
+      text-align: start;
+    }
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+      text-align: start;
+    }
+    @media (max-width: 380px) {
+      text-align: start;
+    }
+    p {
+      margin-top: 15px;
+      color: var(--grey-color);
+      @media (max-width: 991.99px) {
+        margin-top: 15px;
+      }
+      @media (max-width: 600px) {
+        margin-top: 10px;
+      }
+      img {
+        cursor: pointer;
+      }
+      span {
+        text-transform: capitalize;
+        color: var(--inverse-color);
+        font-weight: 500;
+        margin-inline-end: 5px;
+        display: block;
+      }
+    }
+
+    .footerLogo {
+      position: relative;
+      width: 225px;
+      min-height: 69px;
+      cursor: pointer;
+      .img {
+        object-fit: contain;
+      }
+    }
+  }
+  .footerLinksWrap {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 767.99px) and (min-width: 576px) {
+      justify-content: flex-end;
+      margin: 20px 0;
+    }
+    @media (max-width: 575.99px) {
+      justify-content: space-around;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 380px) {
+      justify-content: flex-start;
+    }
+    .footerLinksSection {
+      h4 {
+        text-transform: capitalize;
+        font-weight: var(--weight-500);
+        color: var(--inverse-color);
+        font-size: var(--font-size-medium);
+      }
+      ul {
+        li {
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+          a {
+            color: var(--grey-color);
+            text-transform: capitalize;
+            cursor: pointer;
+            font-size: var(--font-size-medium);
+          }
+          &:hover {
+            a {
+              color: var(--main-color);
+            }
+          }
+        }
+      }
+      &:first-of-type {
+        padding-inline-end: 60px;
+        @media (max-width: 1199.99px) {
+          padding-inline-end: 30px;
+        }
+        @media (max-width: 767.99px) {
+          padding-inline-end: 15px;
+        }
+      }
+      &:last-of-type {
+        padding-inline-start: 60px;
+        border-inline-start: 1px solid var(--main-color);
+        @media (max-width: 1199.99px) {
+          padding-inline-start: 30px;
+        }
+        @media (max-width: 767.99px) {
+          padding-inline-start: 15px;
+        }
+        @media (max-width: 575.99px) {
+          border-inline-start: 0;
+        }
+      }
+    }
+  }
+
+  .socialMediaWrap {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px 10px;
+      width: 70%;
+      @media (max-width: 575.99px) {
+        width: 65%;
+        gap: 10px 10px;
+      }
+      @media (max-width: 350px) {
+        width: 80%;
+      }
+    }
+    li {
+      display: inline-block;
+      vertical-align: middle;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--main-color);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transition: background-color 0.2s ease-in-out;
+        &:hover {
+          background-color: var(--inverse-color-5);
+        }
+      }
+    }
+    p {
+      color: var(--grey-color);
+      margin-bottom: 0;
+      margin-top: 20px;
+      font-size: var(--font-size-medium);
+
+      @media (max-width: 991.99px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.socialCol {
+  max-width: 300px !important;
+}
+
+.mobileRights {
+  color: var(--grey-color);
+  margin: 40px 0 0px;
+  font-size: var(--font-size-medium);
+  text-align: center;
+
+  @media (max-width: 991.99px) {
+    display: block;
+    text-align: left;
+    margin: 40px 0 60px;
+  }
+}

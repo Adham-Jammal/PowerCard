@@ -1,0 +1,100 @@
+.reviewCard {
+  border: none;
+  position: relative;
+  background: var(--inverse-color-4);
+  border-radius: 12px;
+  height: 100%;
+
+  .cardContent {
+    padding: 20px;
+    @media (max-width: 575.99px) {
+      padding: 17px;
+    }
+    .cardDesc {
+      padding-inline-start: 32px;
+      font-size: var(--font-large);
+      line-height: 180%;
+      color: var(--inverse-color);
+      margin-bottom: 60px;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      @media (max-width: 1199.99px) {
+        margin-bottom: 40px;
+      }
+      @media (max-width: 575.99px) {
+        margin-bottom: 40px;
+      }
+    }
+    .quotsWrap {
+      svg {
+        &:first-of-type {
+          margin-inline-end: 2px;
+        }
+      }
+    }
+    .backQuoteWrap {
+      position: absolute;
+      top: 50%;
+      inset-inline-end: 0;
+
+      transform: translate(-25%, -25%);
+      svg {
+        &:first-of-type {
+          margin-inline-end: 2px;
+          @media (max-width: 1199.99px) {
+            margin-inline-end: -15px;
+          }
+        }
+
+        @media (max-width: 1199.99px) {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      opacity: 0.05;
+    }
+    .reviewWrap {
+      display: flex;
+      align-items: center;
+      .star {
+        &:not(:last-of-type) {
+          margin-inline-end: 2px;
+        }
+        &.active {
+          opacity: 0.2;
+        }
+      }
+      .rateNameWrap {
+        margin-inline-start: 10px;
+        display: flex;
+        flex-direction: column;
+        .starsWrap {
+          svg {
+            @media (max-width: 767.99px) {
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+      }
+      .reviewerName {
+        text-transform: capitalize;
+        font-size: var(--font-small);
+        margin-bottom: 5px;
+        color: var(--inverse-color);
+      }
+      .time {
+        display: inline-block;
+        margin-inline-start: auto;
+        font-size: 12px;
+        align-self: flex-end;
+        color: var(--grey-color);
+      }
+    }
+  }
+}
+body[dir^="rtl"] {
+  .backQuoteWrap.backQuoteWrap {
+    transform: translate(25%, -25%) !important;
+  }
+}

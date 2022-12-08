@@ -1,0 +1,94 @@
+.banks {
+  margin-top: -80px;
+  .navTabs {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    .tabLink {
+      display: inline-block;
+      color: var(--inverse-color);
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s all;
+      font-size: var(--font-large);
+      &.current,
+      &:hover {
+        color: var(--main-color);
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 1.5px;
+          background-color: var(--main-color);
+        }
+      }
+    }
+  }
+  .tabContent {
+    padding-top: 20px;
+    .tabPane {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      display: none;
+      &.current {
+        display: flex;
+      }
+    }
+    .tabItem {
+      padding: 8px 12px;
+      border-radius: 6px;
+      margin-bottom: 40px;
+      border: 1px solid var(--main-color);
+      color: var(--inverse-color);
+      max-width: 300px;
+      border-radius: 8px;
+      width: 300px;
+      transition: 0.2s all ease-in;
+
+      &:hover {
+        background-color: var(--inverse-color-11);
+        box-shadow: 0px 1px 15px 4px rgb(0 0 0 / 10%);
+      }
+      .menuImage {
+        position: relative;
+        height: 95px;
+        .img {
+          object-fit: contain;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .title {
+        padding: 0 20px;
+        color: var(--main-color);
+        font-weight: 600;
+        font-size: var(--font-large);
+      }
+      .desc {
+        padding: 0 20px;
+
+        overflow: hidden;
+        font-weight: 300;
+
+        span {
+          display: block;
+          font-weight: 300 !important;
+
+          &:last-child {
+            font-size: var(--font-meduim);
+            font-family: "Tajawal", sans-serif;
+          }
+        }
+      }
+    }
+  }
+}

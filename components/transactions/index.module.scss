@@ -1,0 +1,101 @@
+.orderSummaryCard {
+  border-radius: var(--radius-8);
+  margin-bottom: 20px;
+  border: 1px solid var(--main-color);
+  transition: 0.2s all ease;
+  cursor: pointer;
+  background: transparent;
+  &:hover {
+    background: radial-gradient(
+      129.36% 412.93% at -18.59% -31.72%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    border-color: transparent;
+  }
+  .cardPrefix {
+    font-weight: 300;
+    font-size: var(--font-medium) !important;
+    span {
+      font-weight: 600;
+    }
+  }
+  .priceWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .currency {
+      text-transform: uppercase;
+      margin-inline-start: 5px;
+      color: var(--inverse-color);
+      font-weight: var(--weight-500);
+      font-size: var(--font-x-small);
+      padding-top: 8px;
+    }
+    .price {
+      background: linear-gradient(
+        72.4deg,
+        #dd830b 11.36%,
+        #eab875 24.84%,
+        #ebbc7c 30.13%,
+        #e09024 36.81%,
+        #f3ddbf 102.54%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: var(--font-x-large);
+      font-weight: var(--weight-700);
+    }
+    .priceCurrencyWrap {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+  .cardTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  color: var(--inverse-color);
+  .status {
+    &.paid {
+      color: rgb(13, 141, 13);
+    }
+    &.pending {
+      color: rgb(231, 190, 8);
+    }
+    &.cancelled {
+      color: rgb(168, 43, 21);
+    }
+    &.declined {
+      color: rgb(168, 43, 21);
+    }
+  }
+  .paymentMethod {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    .imgWrap {
+      width: 50px;
+      height: 22px;
+      display: block;
+      position: relative;
+      background-color: var(--main-color);
+      img {
+        padding: 3px !important;
+      }
+      .img {
+        width: 40px;
+        object-fit: contain;
+      }
+    }
+  }
+}

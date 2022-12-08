@@ -1,0 +1,40 @@
+{
+  "name": "power-card",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "analyze": "ANALYZE=true next build"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@next/bundle-analyzer": "^12.2.4",
+    "@reduxjs/toolkit": "^1.8.3",
+    "antd": "^4.21.4",
+    "axios": "^0.27.2",
+    "cookies-next": "^2.1.1",
+    "flag-icon-css": "^4.1.7",
+    "gsap": "^3.11.0",
+    "moment": "^2.29.4",
+    "next": "12.2.0",
+    "next-intl": "^2.7.4",
+    "nodemailer": "^6.7.8",
+    "qs": "^6.11.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.2",
+    "react-responsive": "^9.0.0-beta.10",
+    "react-slick": "^0.29.0",
+    "redux-persist": "^6.0.0",
+    "sass": "^1.53.0",
+    "slick-carousel": "^1.8.1",
+    "sunflower-antd": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.2.0"
+  }
+}

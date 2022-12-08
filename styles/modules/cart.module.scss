@@ -1,0 +1,63 @@
+.cart {
+  position: relative;
+  background: url("/images/bg.png");
+
+  .leftBox,
+  .rightBox {
+    @media (max-width: 767.99px) {
+      display: none;
+    }
+  }
+  // }
+  .container {
+    position: relative;
+  }
+  animation: animate-background 10s alternate infinite;
+}
+@keyframes animate-background {
+  from {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+  to {
+    background-position-x: -50%;
+    background-position-y: 20%;
+  }
+}
+.leftBg {
+  position: absolute;
+  width: 512px;
+  height: 731px;
+  left: -363px;
+  top: 33px;
+
+  background: radial-gradient(
+    537.42% 8260.01% at -17.97% 0%,
+    #dd830b 0%,
+    #745306 91.44%,
+    #dd830b 100%
+  );
+  opacity: 0.5;
+  filter: blur(457px);
+}
+
+.terms {
+  position: relative;
+  margin-top: 100px;
+}
+.rightBg {
+  position: absolute;
+  width: 301px;
+  height: 731px;
+  inset-inline-end: 0;
+  top: 0px;
+
+  background: radial-gradient(
+    537.42% 8260.01% at -17.97% 0%,
+    #dd830b 0%,
+    #745306 91.44%,
+    #dd830b 100%
+  );
+  opacity: 0.5;
+  filter: blur(457px);
+}

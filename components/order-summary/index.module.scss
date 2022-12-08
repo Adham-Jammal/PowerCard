@@ -1,0 +1,99 @@
+.orderSummaryCard {
+  border-radius: var(--radius-8);
+  background: radial-gradient(
+    129.36% 412.93% at -18.59% -31.72%,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  .couponForm {
+    input {
+      padding: 10px !important;
+      border-width: 2px !important;
+      border-radius: var(--radius-8) 0 0 var(--radius-8) !important;
+    }
+    button {
+      border-radius: 0 var(--radius-8) var(--radius-8) 0 !important;
+      height: 42px !important;
+      background-color: var(--main-color);
+      border-color: var(--main-color);
+      width: 117px;
+      &:hover {
+        background-color: var(--main-color-light);
+        border-color: var(--main-color-light);
+      }
+    }
+    &.rtl {
+      input {
+        border-radius: 0 var(--radius-8) var(--radius-8) 0 !important;
+      }
+      button {
+        border-radius: var(--radius-8) 0 0 var(--radius-8) !important;
+      }
+    }
+  }
+}
+.orderSummary {
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--inverse-color);
+      padding: 8px 0;
+      .label {
+        font-size: 13px;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--main-color);
+      }
+      .priceWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .currency {
+          text-transform: uppercase;
+          margin-inline-start: 5px;
+          color: var(--inverse-color);
+          font-weight: var(--weight-500);
+          font-size: var(--font-x-small);
+          padding-top: 8px;
+        }
+        .price {
+          background: linear-gradient(
+            72.4deg,
+            #dd830b 11.36%,
+            #eab875 24.84%,
+            #ebbc7c 30.13%,
+            #e09024 36.81%,
+            #f3ddbf 102.54%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: var(--font-x-large);
+          font-weight: var(--weight-700);
+        }
+        .priceCurrencyWrap {
+          display: inline-flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.checkoutBtnWrap {
+  text-align: center;
+  button {
+    min-width: 150px;
+    height: 40px !important;
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+    padding: 15px 40px;
+    &:hover {
+      background-color: var(--main-color-light) !important;
+      border-color: var(--main-color-light) !important;
+    }
+  }
+}

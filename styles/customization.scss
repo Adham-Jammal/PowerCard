@@ -1,0 +1,404 @@
+.ant-collapse-header {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding: 12px 16px;
+  line-height: 1.5715;
+  cursor: pointer;
+  transition: all 0.3s, visibility 0s;
+}
+.ant-select-item-option {
+  transition: all 0.3s ease-in-out;
+  opacity: 0.5;
+  padding: 0 0;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+.ant-select-item-option-selected {
+  opacity: 1;
+}
+
+.ant-select-selector {
+  padding: 0 0 !important;
+}
+.ant-select-selection-item {
+  padding-right: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ant-select-arrow {
+  display: none !important;
+}
+
+.ant-btn-loading-icon {
+  margin-inline-end: 10px;
+}
+
+.ant-modal-body {
+  max-height: 80%;
+  position: relative;
+  &:after,
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--main-color);
+    position: absolute;
+    border-radius: 8px;
+    z-index: -1;
+    @media (max-width: 575.99px) {
+      // display: none;
+    }
+  }
+  &:after {
+    top: -8px;
+    inset-inline-start: 8px;
+  }
+  &:before {
+    top: -16px;
+    inset-inline-start: 16px;
+  }
+  @media (max-width: 575.99px) {
+    padding: 20px;
+  }
+}
+.ant-modal-content {
+  position: relative;
+  max-width: 90%;
+  background: none !important;
+  margin: 40px auto;
+  border-radius: 8px;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--main-color);
+    position: absolute;
+    top: -24px;
+    inset-inline-start: 24px;
+    z-index: -1;
+    border-radius: 8px;
+    @media (max-width: 575.99px) {
+      // display: none;
+      max-width: 87.2%;
+      height: 82%;
+      inset-inline-start: 46px;
+      top: -6px;
+    }
+  }
+  @media (max-width: 1199.99px) {
+    margin: 30px auto;
+  }
+  @media (max-width: 575.99px) {
+    margin: 0px auto;
+    padding: 20px;
+    max-width: 95%;
+  }
+}
+.ant-input-affix-wrapper {
+  padding: 0;
+  padding-inline-end: 10px;
+}
+.ant-input-password {
+  border-radius: 8px;
+  input {
+    padding: 11px 14px;
+    border-radius: 8px;
+    font-size: var(--font-medium);
+  }
+}
+input {
+  background-color: transparent !important;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: var(--font-medium);
+  &::placeholder {
+    color: var(--grey-light-color);
+  }
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px var(--inverse-color-2) inset !important;
+    -webkit-text-fill-color: var(--grey-light-color);
+    &:hover,
+    &:focus,
+    &:active {
+      -webkit-box-shadow: 0 0 0 30px var(--inverse-color-2) inset !important;
+      -webkit-text-fill-color: var(--grey-light-color);
+    }
+  }
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border: none !important;
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: #f5f5f5 !important;
+}
+
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::after {
+  display: inline-block;
+  margin-right: 4px;
+  color: #ec1c24;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: "*";
+}
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  display: none !important;
+}
+
+.ant-form-item-label label {
+  font-weight: 500 !important;
+}
+
+.ant-input,
+.ant-input-password {
+  padding: 6px 10px !important;
+  border-radius: 8px;
+  height: 42px !important;
+  background-color: transparent !important;
+  color: var(--inverse-color) !important;
+  border: 1px solid var(--main-color-light) !important;
+  box-shadow: none !important;
+  &:hover,
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    -webkit-box-shadow: none !important;
+    border: 1px solid var(--main-color) !important;
+  }
+  svg {
+    fill: var(--inverse-color) !important;
+  }
+}
+.ant-form-item-label {
+  label {
+    color: var(--inverse-color) !important;
+  }
+}
+.ant-input-password .ant-input {
+  height: auto !important;
+  border: none !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  border-color: var(--main-color) !important;
+  background: var(--main-color) !important;
+}
+.ant-checkbox-checked::after,
+.ant-checkbox-inner {
+  border: 1px solid var(--main-color) !important;
+}
+
+.country-collapse {
+  .ant-collapse-header {
+    padding: 0 !important;
+  }
+  .ant-collapse-header.ant-collapse-header {
+    padding: 0 0 !important;
+  }
+
+  .ant-collapse-expand-icon {
+    right: 0 !important;
+    position: absolute;
+    top: 15px;
+    svg {
+      transition: transform 0.3s ease-in-out;
+      width: 10px;
+      height: 10px;
+      path {
+        fill: var(--grey-color) !important;
+      }
+    }
+  }
+  .ant-collapse-content {
+    background-color: transparent;
+    border-top: 0;
+  }
+}
+.theme-wrap {
+  .ant-switch {
+    width: 62px;
+    height: 32px;
+    @media (max-width: 767.99px) {
+      width: 50px;
+      height: 24px;
+    }
+  }
+  .ant-switch-inner {
+    position: relative !important;
+  }
+  .ant-switch-checked {
+    background-color: rgb(71, 71, 71);
+    .ant-switch-handle {
+      &:before {
+        background-color: rgb(14, 182, 14);
+      }
+    }
+  }
+  .ant-switch-handle {
+    width: 25px;
+    height: 25px;
+    @media (max-width: 767.99px) {
+      width: 17px;
+      height: 17px;
+    }
+    top: 50%;
+    transform: translateY(-50%);
+    &:before {
+      border-radius: 50%;
+      background-color: rgb(235, 194, 15);
+    }
+  }
+  .ant-switch-checked .ant-switch-handle {
+    inset-inline-start: calc(100% - 30px);
+    @media (max-width: 767.99px) {
+      inset-inline-start: calc(100% - 20px);
+    }
+  }
+}
+
+.ant-result-title {
+  color: var(--inverse-color) !important;
+}
+.ant-result-subtitle {
+  color: var(--inverse-color-5) !important;
+}
+textarea.ant-input {
+  height: auto !important;
+}
+.ant-upload-drag-container {
+  padding: 0 15px !important;
+  text-align: start;
+}
+
+.productCard {
+  .ant-card-body {
+    flex: 1 !important;
+    padding: 10px 0px 0 !important;
+  }
+}
+
+.subscribeForm {
+  position: relative !important;
+
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+  .ant-input {
+    border: 2px solid var(--white-color) !important;
+    border-radius: 8px;
+    margin-bottom: 0;
+    background-color: var(--transparent);
+  }
+  .ant-form-item-explain {
+    position: absolute !important;
+    top: 45px;
+    .ant-form-item-explain-error {
+      color: #f5f5f5;
+    }
+  }
+  .ant-input {
+    padding-inline: 15px 150px;
+    padding-block: 10px;
+    border: 0;
+    background-color: var(--transparent);
+    color: var(--white-color);
+    font-weight: 400 !important;
+
+    &::placeholder {
+      color: var(--white-color);
+    }
+    @media (max-width: 575.99px) {
+      padding-inline: 15px 150px;
+      padding-block: 5px;
+    }
+  }
+}
+
+.reviewSlider {
+  position: unset;
+  overflow: hidden;
+  padding: 30px 0;
+
+  // :global {
+  .slick-list {
+    overflow: unset;
+    margin: 0 -12px;
+  }
+  .slick-track {
+    display: flex;
+  }
+  .slick-slide {
+    height: auto;
+    & > div {
+      &:first-child {
+        height: 100%;
+      }
+    }
+  }
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px !important;
+    bottom: 0 !important;
+    margin: 0 !important;
+    position: relative;
+
+    li {
+      width: 10px;
+      background-color: var(--main-color) !important;
+      height: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 3px;
+      &:not(.slick-active) {
+        border-radius: 50% !important;
+      }
+    }
+
+    .slick-active {
+      width: 35px;
+      transition: width 0.3s ease-in-out;
+      border: 1px solid var(--main-color);
+      border-radius: 7px;
+      overflow: hidden;
+      background-color: var(--main-color);
+      span {
+        width: 35px;
+      }
+      @media (max-width: 575.99px) {
+        width: 20px;
+        height: 6px;
+        border-radius: 3px;
+        span {
+          width: 20px;
+        }
+      }
+    }
+  }
+  // }
+}
+
+.reviewCard {
+  .ant-card-body {
+    padding: 0;
+  }
+}
+.ant-btn:hover {
+  border: 1px solid var(--main-color) !important;
+}
+
+.select .ant-select-selection-item {
+  justify-content: flex-start !important;
+  padding-inline-start: 8px !important;
+}

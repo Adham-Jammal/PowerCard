@@ -1,0 +1,132 @@
+.checkout {
+  position: relative;
+  background: url("/images/bg.png");
+  animation: animate-background 10s alternate infinite;
+}
+@keyframes animate-background {
+  from {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+  to {
+    background-position-x: -50%;
+    background-position-y: 20%;
+  }
+}
+
+.boxInner {
+  padding: 80px 50px 30px;
+  @media (max-width: 767.99px) {
+    padding: 40px 20px 20px;
+  }
+  margin: 150px auto 200px;
+  position: relative;
+  border: 1px solid #77500a;
+  border-radius: 8px;
+}
+
+.progressWrap {
+  margin-top: 16px;
+
+  .progressBar {
+    margin-bottom: 10px;
+  }
+}
+.passwordHint {
+  color: var(--inverse-color);
+  font-size: var(--font-small);
+  display: flex;
+  row-gap: 8px;
+  align-items: center;
+  opacity: 0.6;
+  margin-bottom: 10px;
+  // :global {
+  svg {
+    display: inline-block;
+    margin-inline-end: 10px;
+  }
+  // }
+}
+.valid.valid {
+  opacity: 1;
+  // :global {
+  path {
+    fill: var(--green-color);
+  }
+  // }
+}
+.Box {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  @media (max-width: 767.99px) {
+    width: 95%;
+  }
+  h2 {
+    @media (max-width: 575.99px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.nextBtn {
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+  width: 250px;
+  height: 50px !important;
+  &:hover {
+    background-color: var(--main-color-light) !important;
+    border-color: var(--main-color-light) !important;
+  }
+}
+
+.info {
+  color: var(--inverse-color);
+  margin: 70px auto;
+  width: 70%;
+  font-size: var(--font-large);
+}
+
+.label {
+  color: var(--inverse-color);
+  font-size: var(--font-large);
+  margin-bottom: 30px;
+}
+
+.paymentMethod {
+  width: 85px;
+  height: 45px;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  img {
+    width: 100%;
+    background-color: var(--main-color);
+    height: 100%;
+    padding: 4px;
+  }
+  &:hover,
+  &.checked {
+    img {
+      background-color: var(--main-color-light);
+    }
+    border: 1px solid var(--main-color-light);
+  }
+}
+
+.paymentMethodWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 15px;
+  margin-bottom: 60px;
+  li {
+    display: inline-block;
+  }
+}

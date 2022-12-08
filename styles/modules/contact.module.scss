@@ -1,0 +1,100 @@
+.main {
+  overflow: hidden;
+  background: url("/images/bg.png");
+  animation: animate-background 10s alternate infinite;
+}
+@keyframes animate-background {
+  from {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+  to {
+    background-position-x: -50%;
+    background-position-y: 20%;
+  }
+}
+
+.contactus {
+  position: relative;
+}
+
+.contactusImgCol {
+  &:not(.ar) {
+    padding-inline-start: 30px;
+  }
+
+  margin-bottom: 20px;
+
+  .contactusInnerImg {
+    height: 300px;
+    position: relative;
+    z-index: 99;
+    border-radius: var(--radius-8);
+
+    @media (max-width: 767.99px) {
+      height: 250px;
+    }
+
+    @media (max-width: 575.99px) {
+      height: 180px;
+    }
+  }
+}
+
+.contactusTitle {
+  margin-bottom: 30px;
+  color: var(--inverse-color);
+
+  span {
+    display: inline-block;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 220px;
+      border-top: 5px solid var(--main-color);
+      position: absolute;
+      bottom: -10px;
+      inset-inline-start: 0;
+      border-radius: 2px;
+    }
+  }
+}
+
+.contactusContent {
+  p {
+    font-size: var(--font-large);
+    color: var(--inverse-color);
+  }
+  max-width: 310px;
+}
+
+.bannerWrap {
+  .bg {
+    position: absolute;
+    top: 0;
+    inset-inline-start: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+  }
+}
+.leftBg {
+  background: radial-gradient(
+    537.42% 8260.01% at -17.97% 0%,
+    #dd830b 0%,
+    #745306 91.44%,
+    #dd830b 100%
+  );
+  opacity: 0.5;
+  filter: blur(457px);
+  position: absolute;
+  width: 952px;
+  height: 731px;
+  z-index: 1;
+  inset-inline-start: -772px;
+  top: 44px;
+}

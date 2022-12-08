@@ -1,0 +1,37 @@
+.relatedCards {
+  position: relative;
+}
+
+.cart {
+  background: url("/images/bg.png");
+  animation: animate-background 10s alternate infinite;
+}
+@keyframes animate-background {
+  from {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+  to {
+    background-position-x: -50%;
+    background-position-y: 20%;
+  }
+}
+.rightBg {
+  background: radial-gradient(
+    537.42% 8260.01% at -17.97% 0%,
+    #dd830b 0%,
+    #745306 91.44%,
+    #dd830b 100%
+  );
+  opacity: 0.5;
+  filter: blur(457px);
+  position: absolute;
+  width: 952px;
+  height: 731px;
+  inset-inline-end: -772px;
+  top: 44px;
+}
+
+.terms {
+  position: relative;
+}

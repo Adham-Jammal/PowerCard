@@ -1,0 +1,299 @@
+.bannerWrap {
+  background: url("/images/bg.png");
+
+  animation: animate-background 10s alternate infinite;
+}
+@keyframes animate-background {
+  from {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+  to {
+    background-position-x: -50%;
+    background-position-y: 20%;
+  }
+}
+.bannerWrap {
+  min-height: 90vh;
+  position: relative;
+  @media (max-width: 575.99px) {
+    min-height: 70vh;
+    margin-top: 20px;
+  }
+  .bg {
+    position: absolute;
+    top: 0;
+    inset-inline-start: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+  }
+
+  .leftBg {
+    background: radial-gradient(
+      537.42% 8260.01% at -17.97% 0%,
+      #dd830b 0%,
+      #745306 91.44%,
+      #dd830b 100%
+    );
+    background: -webkit-gradient(
+      radial,
+      537.42% 8260.01% at -17.97% 0%,
+      #dd830b 0%,
+      #745306 91.44%,
+      #dd830b 100%
+    );
+    background: -webkit-radial-gradient(
+      537.42% 8260.01% at -17.97% 0%,
+      #dd830b 0%,
+      #745306 91.44%,
+      #dd830b 100%
+    );
+
+    opacity: 0.5;
+    filter: blur(457px);
+    position: absolute;
+    width: 100vw;
+    height: 731px;
+    inset-inline-start: -80vw;
+    top: 44px;
+    @media (max-width: 575.99px) {
+      top: -60px !important;
+      height: 450px;
+      filter: blur(228.5px);
+      width: 100vw !important;
+      inset-inline-start: -95vw !important;
+      opacity: 0.5 !important;
+    }
+  }
+}
+.vipWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 63px;
+  img {
+    width: 177px;
+    height: 177px;
+  }
+}
+
+.powerCardImg {
+  width: 390px;
+  margin-inline-start: -20px;
+  @media (max-width: 1199.99px) {
+    width: 250px;
+    margin-inline-start: -10px;
+  }
+  @media (max-width: 575.99px) {
+    width: 160px;
+  }
+}
+.mainContent {
+  font-weight: var(--weight-700);
+  font-size: var(--font-xx-large);
+  line-height: 166%;
+  letter-spacing: 0.5px;
+  color: var(--inverse-color);
+  margin-bottom: 10px;
+  @media (max-width: 600.99px) {
+    font-size: var(--font-x-large);
+  }
+}
+.subMainContent {
+  font-weight: var(--weight-700);
+  font-size: var(--font-x-large);
+  line-height: 166%;
+  color: var(--inverse-color);
+  letter-spacing: 0.5px;
+}
+.bannerAboutContent {
+  font-weight: var(--weight-400);
+  font-size: var(--font-large);
+  line-height: 170%;
+  margin-top: 50px;
+  color: var(--inverse-color-5);
+  width: 90%;
+}
+
+.bannerBtnsWrap {
+  margin-top: 40px;
+  button {
+    &:first-of-type {
+      margin-inline-end: 15px;
+    }
+  }
+  .button {
+    color: var(--inverse-color0);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    width: 160px;
+    &:hover {
+      background-color: var(--main-color-light);
+      border-color: var(--main-color-light);
+    }
+  }
+}
+.statisticsWrap {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+
+  li {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 35px;
+    &:first-of-type {
+      padding-left: 0;
+    }
+    &:last-of-type {
+      padding-right: 0;
+    }
+
+    span {
+      &:first-of-type {
+        font-weight: var(--weight-500);
+        font-size: var(--font-x-large);
+        font-family: "Rubik", sans-serif !important;
+        line-height: 19px;
+        margin-bottom: 16px;
+        color: var(--inverse-color);
+      }
+      &:last-of-type {
+        font-size: var(--font-small);
+        line-height: 19px;
+        margin-bottom: 16px;
+        color: var(--grey-color);
+        text-transform: capitalize;
+      }
+    }
+    &:not(:last-of-type) {
+      &::after {
+        content: "";
+        height: 60%;
+        top: 0;
+        inset-inline-end: 0;
+        width: 1px;
+        background-color: var(--inverse-color);
+        position: absolute;
+        transform: translateY(10%);
+      }
+    }
+  }
+  &.ar {
+    li {
+      &:first-of-type {
+        padding-left: 35px;
+        padding-right: 0;
+      }
+      &:last-of-type {
+        padding-right: 35px;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.rightBg {
+  background: radial-gradient(
+    537.42% 8260.01% at -17.97% 0%,
+    #dd830b 0%,
+    #745306 91.44%,
+    #dd830b 100%
+  );
+  opacity: 0.5;
+  filter: blur(457px);
+  position: absolute;
+  width: 500px;
+  height: 731px;
+  inset-inline-start: 0px;
+  top: 44px;
+  transform: translateX(-50%);
+}
+
+.row {
+  justify-content: space-between;
+  @media (max-width: 991.99px) {
+    justify-content: center;
+  }
+  .contentCol {
+    @media (max-width: 991.99px) {
+      margin-bottom: 40px;
+    }
+  }
+  .bannerCol {
+    padding-top: 40px;
+    padding-right: 27px;
+    @media (max-width: 991.99px) {
+      padding-top: 24px;
+    }
+  }
+}
+
+.contactBtn {
+  position: absolute;
+  inset-inline-end: 0;
+  top: 50%;
+  transform: translateX(70%);
+  z-index: 999;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  padding: 6px 15px;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+  @media (max-width: 991.99px) {
+    top: 100%;
+    transform: translateX(-50px);
+  }
+
+  span {
+    color: var(--white-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:first-of-type {
+      display: inline-flex;
+      align-items: center;
+      border-inline-end: 1px solid var(--white-color);
+      padding-inline-end: 12px;
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    &:last-child {
+      padding-inline-start: 12px;
+      text-transform: capitalize;
+    }
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.contentWrap {
+  padding-left: 0;
+  @media (max-width: 575.99px) {
+    padding-left: 10px;
+  }
+}
+
+body[dir^="rtl"] {
+  .powerCardImg {
+    margin: 0 0 !important;
+  }
+  .contactBtn {
+    transform: translateX(-50px);
+    @media (max-width: 991.99px) {
+      top: 100%;
+      transform: translateX(70px);
+    }
+  }
+}
