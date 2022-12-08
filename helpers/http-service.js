@@ -6,7 +6,7 @@ const qs = require("qs");
 
 const http = axios.create({
   // baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
-  baseURL: "http://admin.powercard-sa.com:3000/",
+  baseURL: "https://admin.powercard-sa.com:3000/",
   timeout: 25000,
   paramsSerializer(params) {
     return qs.stringify(params, {
