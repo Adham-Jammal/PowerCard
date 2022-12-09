@@ -8,7 +8,12 @@ module.exports = withBundleAnalyzer({
     locales: ["en", "ar"],
     defaultLocale: "en",
   },
-  images: {
-    domains: ['https://admin.powercard-sa.com'],
-},
+//   images: {
+//     domains: ['https://admin.powercard-sa.com'],
+// },
 });
+module.exports = {
+  images: {
+      domains: ['https://admin.powercard-sa.com'],
+  },
+}
