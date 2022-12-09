@@ -67,12 +67,12 @@ const Banner = () => {
             xl={13}
           >
             <div className={styles.contentWrap}>
-              <Image
+              {/* <Image
                 className={styles.powerCardImg}
                 preview={false}
                 alt={t("power_card")}
                 src={`/images/${imageMapping()}`}
-              />
+              /> */}
               <p className={styles.mainContent}>
                 {t("banner_main_content")}
 
