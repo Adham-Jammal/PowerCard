@@ -37,7 +37,7 @@ const BannerSlider = ({ data }) => {
                 <Image
                   alt="banner"
                   className={styles.img}
-                  src={`https://admin.powercard-sa.com${item.image}`}
+                  src={`${item.image}`}
                   layout="fill"
                 />
                 {/* <div className={styles.imageCut}>
