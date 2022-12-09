@@ -14,6 +14,6 @@ module.exports = withBundleAnalyzer({
 });
 module.exports = {
   images: {
-      domains: ['https://admin.powercard-sa.com'],
+      domains: ['powercard-sa.com'],
   },
 }
