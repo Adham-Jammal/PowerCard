@@ -9,10 +9,6 @@ module.exports = withBundleAnalyzer({
     defaultLocale: "en",
   },
   images: {
-    domains: [
-      "167.172.130.0",
-      "likecard-space.fra1.digitaloceanspaces.com",
-      "admin.powercard-sa.com",
-    ],
-  },
+    domains: ['https://admin.powercard-sa.com'],
+},
 });
