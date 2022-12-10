@@ -8,11 +8,21 @@ module.exports = withBundleAnalyzer({
     locales: ["en", "ar"],
     defaultLocale: "en",
   },
+  // images: {
+  //   domains: [
+  //     "167.172.130.0",
+  //     "likecard-space.fra1.digitaloceanspaces.com",
+  //     "powercard-sa.com",
+  //   ],
+  // },
+});
+const nextConfig = {
   images: {
-    domains: [
-      "167.172.130.0",
-      "likecard-space.fra1.digitaloceanspaces.com",
-      "powercard-sa.com",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
     ],
   },
-});
+};
