@@ -4,9 +4,9 @@ import styles from "./index.module.scss";
 import { useRouter } from "next/router";
 
 const BannerSlider = ({ data }) => {
-  // const myLoader = ({ src }) => {
-  //   return `https://admin.powercard-sa.com/${src}`
-  // }
+  const myLoader = ({ src }) => {
+    return `https://powercard-sa.com/${src}`
+  }
   const { locale } = useRouter();
 
   const isRtl = locale === "ar";
@@ -38,7 +38,7 @@ const BannerSlider = ({ data }) => {
             <div key={index}>
               <div className={styles.imageWarper}>
                 <Image
-                  // loader={myLoader}
+                  loader={myLoader}
                   alt="banner"
                   className={styles.img}
                   src={`https://admin.powercard-sa.com${item.image}`}
